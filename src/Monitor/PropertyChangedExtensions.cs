@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Reactive.Linq;
 
-namespace Monitor.PropertyChanged
+namespace Monitor
 {
     public static class PropertyChangedExtensions
     {
