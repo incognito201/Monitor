@@ -1,4 +1,5 @@
-﻿using Monitor.Utils;
+﻿using Monitor.Models;
+using Monitor.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
