@@ -58,9 +58,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collection\DataErrorsChangedEventArgs.cs" />
-    <Compile Include="Collection\ItemReplacedEventArgs.cs" />
-    <Compile Include="Collection\PropertyChangedEventArgs.cs" />
+    <Compile Include="CollectionChangedExtensions.cs" />
+    <Compile Include="Models\DataErrorsChangedEventArgs.cs" />
+    <Compile Include="Models\ItemReplacedEventArgs.cs" />
+    <Compile Include="Models\PropertyChangedEventArgs.cs" />
     <Compile Include="Collection\WatchableCollection.cs" />
     <Compile Include="Collection\WatchableCollectionExtensions.cs" />
     <Compile Include="NotifyDataErrorInfoExtensions.cs" />
