@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ObjectExtension.cs" />
+    <Compile Include="Utils\PropertyExpressionExtension.cs" />
+    <Compile Include="Utils\PropertyUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
