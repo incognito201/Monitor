@@ -18,6 +18,10 @@ OrderItems.WhenItemPropertyChanged(x => x.Quantity)
         {
             item.AddError(e.PropertyName, "Invalid quantity!");
         }
+        else
+        {
+            item.RemoveErrors(e.PropertyName);
+        }
     });
 ```
 
