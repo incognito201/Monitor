@@ -4,10 +4,10 @@
 
 Constrói observables a partir de objetos que implementam INotifyPropertyChanged, INotifyCollectionChanged ou INotifyDataErrorInfo.
 
-## Um exemplo
+## Exemplos
 
 - Monitorando uma propriedade de um item:
-```
+```cs
 OrderItems = new WatchableCollection<OrderItem>();
 
 OrderItems.WhenItemPropertyChanged(x => x.Quantity)
@@ -20,13 +20,13 @@ OrderItems.WhenItemPropertyChanged(x => x.Quantity)
 ```
 
 - Monitorando múltiplas propriedades de um item
-```
+```cs
 public decimal Total
 {
     get => OrderItems.Sum(i => i.Quantity * i.Price);
 }
 ```
-```
+```cs
 OrderItems.WhenAnyItemPropertyChanged(x => x.Quantity, x => x.Price)
     .Subscribe(i =>
     {
