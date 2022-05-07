@@ -11,11 +11,13 @@ Constrói observables a partir de objetos que implementam INotifyPropertyChanged
 OrderItems = new WatchableCollection<OrderItem>();
 
 OrderItems.WhenItemPropertyChanged(x => x.Quantity)
-    .Where(e => e.Source.Quantity < 1)
     .Subscribe(e =>
     {
         var item = e.Source;
-        item.AddError(e.PropertyName, "Invalid quantity!");
+        if(item.Quantity < 1)
+        {
+            item.AddError(e.PropertyName, "Invalid quantity!");
+        }
     });
 ```
 
